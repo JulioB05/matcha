@@ -22,7 +22,7 @@ button {
     text-align: center;
 }
 
-.fixedHeader{
+.fixedHeader {
     position: fixed;
     top: 0;
     left: 0;
@@ -124,25 +124,25 @@ li {
     margin-right: 18px;
 }
 
-.promo{
+.promo {
     display: flex;
     width: 70%;
     margin: 100px auto;
     align-items: center;
 }
 
-.formatVideo{
+.formatVideo {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.formatVideo img{
-width: 120px;
-margin-top: 10px;
+
+.formatVideo img {
+    width: 120px;
+    margin-top: 10px;
 }
 
 iframe {
     display: flex;
     margin: auto;
-  }
-
+}
