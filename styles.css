@@ -3,6 +3,7 @@ body {
 }
 
 h1 {
+    font-size: 80px;
     color: #025157;
     text-align: center;
     font-family: 'Dancing Script', cursive;
@@ -198,13 +199,13 @@ iframe {
     /* grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr); */
 
-    grid-template: repeat(2, 1fr)/repeat(2,1fr);
+    grid-template: repeat(2, 1fr)/repeat(2, 1fr);
     height: 660px;
     background-color: #025157;
     padding: 5% 10%;
-}   
+}
 
-.featureCard{
+.featureCard {
     margin-bottom: 30px;
     margin-left: 15px;
     margin-right: 15px;
@@ -215,37 +216,39 @@ iframe {
     align-items: center;
     overflow: hidden;
 }
-.featureContent{
+
+.featureContent {
     padding: 30px 20px 40px 40px;
     flex: 2;
     margin-bottom: 1rem;
     margin-top: 0;
 }
-.featureContent h3{
+
+.featureContent h3 {
     font-size: 24px;
     color: #343434;
     font-weight: 400;
 }
 
-.featureContent p{
+.featureContent p {
     font-size: 16px;
     color: #7e7e7e;
     font-weight: 400;
 }
 
-.featureContent a{
+.featureContent a {
     font-size: 16px;
     color: #67b54b;
     font-weight: 600;
     text-decoration: none;
 }
 
-.featureContent img{
- width: 50px;
-margin-top: 20px
-
+.featureContent img {
+    width: 50px;
+    margin-top: 20px
 }
-.featureImage{
+
+.featureImage {
     width: 50px;
     flex: 1;
     width: 40%;
@@ -253,9 +256,73 @@ margin-top: 20px
     right: -50px;
     height: 80%;
 }
-  
-  .features .featureCard .featureImage figure,
-  .features .featureCard .featureImage img {
+
+.features .featureCard .featureImage figure,
+.features .featureCard .featureImage img {
     margin-top: 0;
     height: 100%;
-  }
+}
+
+
+/** dispositivos móviles en vista viewport (vertical) */
+@media (max-width: 575px) {
+
+    .navbar,
+    .actions {
+        display: none;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .main {
+        margin-top: 130px;
+    }
+
+    .banner {
+        width: 100%;
+    }
+
+    .publish > form{
+        flex-direction: column;
+    }
+
+    .publish > form > div {
+        height: 50px;
+        margin-top: 10 px;
+    }
+
+    .publish>form>div>input{
+        width: 65%;
+    }
+
+    .promo{
+        flex-direction: column;
+        max-width: 90%;
+    }
+    .explanatory-video > video {
+        width: 100%;
+    }
+    .publish{
+        margin-top: 10 px;
+    }
+
+    .publish > h3 {
+        font-size: 25px;
+        line-height: 1.2;
+    }
+
+}
+
+/** dispositivos pequeños en vista landscape (horizontal) */
+@media (min-width: 576px) and (max-width: 767px) {}
+
+/** dispositivos medianos (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {}
+
+/** dispositivos grandes (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+/** dispositivos extra grandes (monitores grandes, tvs) */
+@media (min-width: 1200px) {}
